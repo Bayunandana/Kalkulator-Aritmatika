@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="volume">
+            <h2>Volume Bangun Ruang</h2>
+            <label for="shape">Pilih Bentuk:</label>
+            <select id="shape">
+                <option value="cube">Kubus</option>
+                <option value="sphere">Bola</option>
+                <option value="cylinder">Tabung</option>
+            </select>
+            <div id="cubeInputs">
+                <label for="cubeSide"><br>Sisi Kubus:</label>
+                <input type="number" id="cubeSide">
+            </div>
+            <div id="sphereInputs" style="display: none;">
+                <label for="sphereRadius"><br>Jari-Jari Bola:</label>
+                <input type="number" id="sphereRadius">
+            </div>
+            <div id="cylinderInputs" style="display: none;">
+                <label for="cylinderRadius"><br>Jari-Jari Tabung:</label>
+                <input type="number" id="cylinderRadius">
+                <label for="cylinderHeight">Tinggi Tabung:</label>
+                <input type="number" id="cylinderHeight">
+            </div>
+            <button onclick="calculateVolume()">Hitung</button>
+            <p>Hasil:</p>
+            <div id="volumeResult"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
